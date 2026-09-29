@@ -1,0 +1,19 @@
+$ python3 json_to_markdown.py fixtures/json-to-markdown.input.json
+| Title | Description | Job ID | Reward | Status |
+| --- | --- | --- | --- | --- |
+| Audit a lending pool \| Base | Static analysis + manual review.\nDeliver a report with **findings** and &lt;script&gt;alert(1)&lt;/script&gt; excluded. | job-001 | 2.500000 USDC | open |
+| Write a `bonding curve` sim | Model buy/sell slippage for a *linear* curve. Include a table:\n\| a \| b \|\n\| - \| - \| | job-002 | 0.750000 USDC | claimed |
+| x402 payment demo | Build a minimal HTTP 402 gated endpoint on testnet, no mainnet funds. | job-003 | 1000.000000 USDC | completed |
+exit code: 0
+
+$ python3 json_to_markdown.py fixtures/json-to-markdown.invalid-missing-field.json
+error: record 0 (id='job-010'): missing required field(s): status
+exit code: 1
+
+$ python3 json_to_markdown.py fixtures/json-to-markdown.invalid-duplicate-id.json
+error: record 1: duplicate id 'job-020' (already used by record 0)
+exit code: 1
+
+$ python3 json_to_markdown.py fixtures/json-to-markdown.invalid-reward.json
+error: record 0 (id='job-030'): rewardAtoms must be a canonical non-negative JSON integer (no decimals, no string), got '2500000'
+exit code: 1

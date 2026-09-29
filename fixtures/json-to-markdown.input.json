@@ -1,0 +1,23 @@
+[
+  {
+    "id": "job-001",
+    "title": "Audit a lending pool | Base",
+    "description": "Static analysis + manual review.\nDeliver a report with **findings** and <script>alert(1)</script> excluded.",
+    "rewardAtoms": 2500000,
+    "status": "open"
+  },
+  {
+    "id": "job-002",
+    "title": "Write a `bonding curve` sim",
+    "description": "Model buy/sell slippage for a *linear* curve. Include a table:\n| a | b |\n| - | - |",
+    "rewardAtoms": 750000,
+    "status": "claimed"
+  },
+  {
+    "id": "job-003",
+    "title": "x402 payment demo",
+    "description": "Build a minimal HTTP 402 gated endpoint on testnet, no mainnet funds.",
+    "rewardAtoms": 1000000000,
+    "status": "completed"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "id": "job-010",
+    "title": "Write a subgraph indexer",
+    "description": "Index deposit/withdraw events for a single vault contract.",
+    "rewardAtoms": 500000
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "job-030",
+    "title": "Write integration tests",
+    "description": "Cover the settlement path with unit and fork tests.",
+    "rewardAtoms": "2500000",
+    "status": "open"
+  }
+]

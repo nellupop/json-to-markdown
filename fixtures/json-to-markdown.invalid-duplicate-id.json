@@ -1,0 +1,16 @@
+[
+  {
+    "id": "job-020",
+    "title": "Review a Vyper vault",
+    "description": "Manual review of withdrawal accounting.",
+    "rewardAtoms": 1200000,
+    "status": "open"
+  },
+  {
+    "id": "job-020",
+    "title": "Review a second Vyper vault",
+    "description": "Manual review of a different vault's accounting.",
+    "rewardAtoms": 900000,
+    "status": "open"
+  }
+]
